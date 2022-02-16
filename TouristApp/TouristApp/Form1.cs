@@ -61,6 +61,7 @@ namespace TouristApp
         {
             doneButton.Enabled = false;
             doneButton.FlatStyle = FlatStyle.Flat;
+            doneButton.FlatAppearance.BorderSize = 0;
             doneButton.FlatAppearance.MouseDownBackColor = Color.LimeGreen;
         }
 
