@@ -9,3 +9,15 @@ C:\Users\nrvan693\source\repos\TouristApp\TouristApp\obj\Debug\TouristApp.splash
 C:\Users\nrvan693\source\repos\TouristApp\TouristApp\obj\Debug\TouristApp.csproj.GenerateResource.cache
 C:\Users\nrvan693\source\repos\TouristApp\TouristApp\obj\Debug\TouristApp.exe
 C:\Users\nrvan693\source\repos\TouristApp\TouristApp\obj\Debug\TouristApp.pdb
+C:\Users\nrvan693\Documents\GitHub repositories\touristattractions\TouristApp\TouristApp\bin\Debug\TouristAttractions.accdb
+C:\Users\nrvan693\Documents\GitHub repositories\touristattractions\TouristApp\TouristApp\bin\Debug\TouristApp.exe.config
+C:\Users\nrvan693\Documents\GitHub repositories\touristattractions\TouristApp\TouristApp\bin\Debug\TouristApp.exe
+C:\Users\nrvan693\Documents\GitHub repositories\touristattractions\TouristApp\TouristApp\bin\Debug\TouristApp.pdb
+C:\Users\nrvan693\Documents\GitHub repositories\touristattractions\TouristApp\TouristApp\obj\Debug\TouristApp.csprojAssemblyReference.cache
+C:\Users\nrvan693\Documents\GitHub repositories\touristattractions\TouristApp\TouristApp\obj\Debug\TouristApp.Interestsform.resources
+C:\Users\nrvan693\Documents\GitHub repositories\touristattractions\TouristApp\TouristApp\obj\Debug\TouristApp.mainForm.resources
+C:\Users\nrvan693\Documents\GitHub repositories\touristattractions\TouristApp\TouristApp\obj\Debug\TouristApp.Properties.Resources.resources
+C:\Users\nrvan693\Documents\GitHub repositories\touristattractions\TouristApp\TouristApp\obj\Debug\TouristApp.splashScreen.resources
+C:\Users\nrvan693\Documents\GitHub repositories\touristattractions\TouristApp\TouristApp\obj\Debug\TouristApp.csproj.GenerateResource.cache
+C:\Users\nrvan693\Documents\GitHub repositories\touristattractions\TouristApp\TouristApp\obj\Debug\TouristApp.exe
+C:\Users\nrvan693\Documents\GitHub repositories\touristattractions\TouristApp\TouristApp\obj\Debug\TouristApp.pdb

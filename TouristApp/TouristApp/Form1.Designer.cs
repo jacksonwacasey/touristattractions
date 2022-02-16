@@ -71,6 +71,7 @@
             this.ruralButton.TabIndex = 2;
             this.ruralButton.Text = "Rural Landscape";
             this.ruralButton.UseVisualStyleBackColor = true;
+            this.ruralButton.Click += new System.EventHandler(this.ruralButton_Click);
             // 
             // manMadeButton
             // 
@@ -81,6 +82,7 @@
             this.manMadeButton.TabIndex = 3;
             this.manMadeButton.Text = "Man-made Attractions";
             this.manMadeButton.UseVisualStyleBackColor = true;
+            this.manMadeButton.Click += new System.EventHandler(this.manMadeButton_Click);
             // 
             // naturalButton
             // 
@@ -91,6 +93,7 @@
             this.naturalButton.TabIndex = 4;
             this.naturalButton.Text = "Natural Attractions";
             this.naturalButton.UseVisualStyleBackColor = true;
+            this.naturalButton.Click += new System.EventHandler(this.naturalButton_Click);
             // 
             // hikingButton
             // 
@@ -101,6 +104,7 @@
             this.hikingButton.TabIndex = 5;
             this.hikingButton.Text = "Hiking/Exercise";
             this.hikingButton.UseVisualStyleBackColor = true;
+            this.hikingButton.Click += new System.EventHandler(this.hikingButton_Click);
             // 
             // amusementParksButton
             // 
@@ -111,6 +115,7 @@
             this.amusementParksButton.TabIndex = 6;
             this.amusementParksButton.Text = "Amusement Parks";
             this.amusementParksButton.UseVisualStyleBackColor = true;
+            this.amusementParksButton.Click += new System.EventHandler(this.amusementParksButton_Click);
             // 
             // fastFoodButton
             // 
@@ -121,6 +126,7 @@
             this.fastFoodButton.TabIndex = 7;
             this.fastFoodButton.Text = "Fast Food";
             this.fastFoodButton.UseVisualStyleBackColor = true;
+            this.fastFoodButton.Click += new System.EventHandler(this.fastFoodButton_Click);
             // 
             // sitdownFoodButton
             // 
@@ -131,6 +137,7 @@
             this.sitdownFoodButton.TabIndex = 8;
             this.sitdownFoodButton.Text = "Sit-Down Dining";
             this.sitdownFoodButton.UseVisualStyleBackColor = true;
+            this.sitdownFoodButton.Click += new System.EventHandler(this.sitdownFoodButton_Click);
             // 
             // doneButton
             // 
@@ -142,12 +149,13 @@
             this.doneButton.TabIndex = 9;
             this.doneButton.Text = "√";
             this.doneButton.UseVisualStyleBackColor = false;
+            this.doneButton.Click += new System.EventHandler(this.doneButton_Click);
             // 
             // Interestsform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(694, 647);
             this.Controls.Add(this.doneButton);
             this.Controls.Add(this.sitdownFoodButton);
