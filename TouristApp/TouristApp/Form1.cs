@@ -46,6 +46,8 @@ namespace TouristApp
         {
             if (total_selections == 4)
             {
+                doneButton.Enabled = true;
+                doneButton.BackColor = Color.LimeGreen;
                 if (s1 == 0)
                 {
                     urbanButton.Enabled = false;
@@ -117,11 +119,21 @@ namespace TouristApp
                 {
                     sitdownFoodButton.Enabled = true;
                 }
-                label2.Text = "";
+                doneButton.Text = "√";
             }
             if (total_selections <= 3)
             {
-                label2.Text = $"You have selected {total_selections} interests, plese select {4 - total_selections} more.";
+                sitdownFoodButton.Enabled = true;
+                fastFoodButton.Enabled = true;
+                amusementParksButton.Enabled = true;
+                hikingButton.Enabled = true;
+                naturalButton.Enabled = true;
+                manMadeButton.Enabled = true;
+                ruralButton.Enabled = true;
+                urbanButton.Enabled = true;
+                doneButton.Enabled = false;
+                doneButton.BackColor = Color.Red;
+                doneButton.Text = $"You have selected {total_selections} interest(s), please select {4 - total_selections} more.";
             }
         }
         private void ruralButton_Click(object sender, EventArgs e)
@@ -257,7 +269,9 @@ namespace TouristApp
 
         private void doneButton_Click(object sender, EventArgs e)
         {
-
+            mainForm main = new mainForm();
+            this.Hide();
+            main.Show();
         }
 
     }
