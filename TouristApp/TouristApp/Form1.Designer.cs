@@ -52,7 +52,7 @@
             // 
             // urbanButton
             // 
-            this.urbanButton.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.urbanButton.BackColor = System.Drawing.Color.LightGray;
             this.urbanButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.urbanButton.Location = new System.Drawing.Point(186, 114);
             this.urbanButton.Name = "urbanButton";
@@ -64,79 +64,86 @@
             // 
             // ruralButton
             // 
+            this.ruralButton.BackColor = System.Drawing.Color.LightGray;
             this.ruralButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ruralButton.Location = new System.Drawing.Point(350, 114);
             this.ruralButton.Name = "ruralButton";
             this.ruralButton.Size = new System.Drawing.Size(145, 82);
             this.ruralButton.TabIndex = 2;
             this.ruralButton.Text = "Rural Landscape";
-            this.ruralButton.UseVisualStyleBackColor = true;
+            this.ruralButton.UseVisualStyleBackColor = false;
             this.ruralButton.Click += new System.EventHandler(this.ruralButton_Click);
             // 
             // manMadeButton
             // 
+            this.manMadeButton.BackColor = System.Drawing.Color.LightGray;
             this.manMadeButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.manMadeButton.Location = new System.Drawing.Point(186, 215);
             this.manMadeButton.Name = "manMadeButton";
             this.manMadeButton.Size = new System.Drawing.Size(145, 82);
             this.manMadeButton.TabIndex = 3;
             this.manMadeButton.Text = "Man-made Attractions";
-            this.manMadeButton.UseVisualStyleBackColor = true;
+            this.manMadeButton.UseVisualStyleBackColor = false;
             this.manMadeButton.Click += new System.EventHandler(this.manMadeButton_Click);
             // 
             // naturalButton
             // 
+            this.naturalButton.BackColor = System.Drawing.Color.LightGray;
             this.naturalButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.naturalButton.Location = new System.Drawing.Point(350, 215);
             this.naturalButton.Name = "naturalButton";
             this.naturalButton.Size = new System.Drawing.Size(145, 82);
             this.naturalButton.TabIndex = 4;
             this.naturalButton.Text = "Natural Attractions";
-            this.naturalButton.UseVisualStyleBackColor = true;
+            this.naturalButton.UseVisualStyleBackColor = false;
             this.naturalButton.Click += new System.EventHandler(this.naturalButton_Click);
             // 
             // hikingButton
             // 
+            this.hikingButton.BackColor = System.Drawing.Color.LightGray;
             this.hikingButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hikingButton.Location = new System.Drawing.Point(186, 319);
             this.hikingButton.Name = "hikingButton";
             this.hikingButton.Size = new System.Drawing.Size(145, 82);
             this.hikingButton.TabIndex = 5;
             this.hikingButton.Text = "Hiking/Exercise";
-            this.hikingButton.UseVisualStyleBackColor = true;
+            this.hikingButton.UseVisualStyleBackColor = false;
             this.hikingButton.Click += new System.EventHandler(this.hikingButton_Click);
             // 
             // amusementParksButton
             // 
+            this.amusementParksButton.BackColor = System.Drawing.Color.LightGray;
             this.amusementParksButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.amusementParksButton.Location = new System.Drawing.Point(350, 319);
             this.amusementParksButton.Name = "amusementParksButton";
             this.amusementParksButton.Size = new System.Drawing.Size(145, 82);
             this.amusementParksButton.TabIndex = 6;
             this.amusementParksButton.Text = "Amusement Parks";
-            this.amusementParksButton.UseVisualStyleBackColor = true;
+            this.amusementParksButton.UseVisualStyleBackColor = false;
             this.amusementParksButton.Click += new System.EventHandler(this.amusementParksButton_Click);
             // 
             // fastFoodButton
             // 
+            this.fastFoodButton.BackColor = System.Drawing.Color.LightGray;
             this.fastFoodButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fastFoodButton.Location = new System.Drawing.Point(186, 421);
             this.fastFoodButton.Name = "fastFoodButton";
             this.fastFoodButton.Size = new System.Drawing.Size(145, 82);
             this.fastFoodButton.TabIndex = 7;
             this.fastFoodButton.Text = "Fast Food";
-            this.fastFoodButton.UseVisualStyleBackColor = true;
+            this.fastFoodButton.UseVisualStyleBackColor = false;
             this.fastFoodButton.Click += new System.EventHandler(this.fastFoodButton_Click);
             // 
             // sitdownFoodButton
             // 
+            this.sitdownFoodButton.BackColor = System.Drawing.Color.LightGray;
             this.sitdownFoodButton.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sitdownFoodButton.Location = new System.Drawing.Point(350, 421);
             this.sitdownFoodButton.Name = "sitdownFoodButton";
             this.sitdownFoodButton.Size = new System.Drawing.Size(145, 82);
             this.sitdownFoodButton.TabIndex = 8;
             this.sitdownFoodButton.Text = "Sit-Down Dining";
-            this.sitdownFoodButton.UseVisualStyleBackColor = true;
+            this.sitdownFoodButton.UseVisualStyleBackColor = false;
             this.sitdownFoodButton.Click += new System.EventHandler(this.sitdownFoodButton_Click);
             // 
             // doneButton
