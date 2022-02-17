@@ -38,6 +38,7 @@
             this.fastFoodButton = new System.Windows.Forms.Button();
             this.sitdownFoodButton = new System.Windows.Forms.Button();
             this.doneButton = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -149,14 +150,24 @@
             // doneButton
             // 
             this.doneButton.BackColor = System.Drawing.Color.Red;
-            this.doneButton.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.doneButton.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.doneButton.Location = new System.Drawing.Point(186, 522);
             this.doneButton.Name = "doneButton";
             this.doneButton.Size = new System.Drawing.Size(309, 82);
             this.doneButton.TabIndex = 9;
-            this.doneButton.Text = "√";
+            this.doneButton.Text = "You have selected 0 interests, please select 4 more.";
             this.doneButton.UseVisualStyleBackColor = false;
             this.doneButton.Click += new System.EventHandler(this.doneButton_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(107, 86);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(502, 25);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "You have selected 0 interests, plese select 4 more.";
             // 
             // Interestsform
             // 
@@ -164,6 +175,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(694, 647);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.doneButton);
             this.Controls.Add(this.sitdownFoodButton);
             this.Controls.Add(this.fastFoodButton);
@@ -196,6 +208,7 @@
         private System.Windows.Forms.Button fastFoodButton;
         private System.Windows.Forms.Button sitdownFoodButton;
         private System.Windows.Forms.Button doneButton;
+        private System.Windows.Forms.Label label2;
     }
 }
 
