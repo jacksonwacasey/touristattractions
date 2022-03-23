@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace NewestTouristApp
 {
@@ -42,10 +43,10 @@ namespace NewestTouristApp
                     // Query database  
                     var contactDetails =
                        from c in touristAttractionsDataSet.Table1
-                       where c.Urban == "Yes" && c.Rural == "Yes" && c._Man_made == "Yes" && c.Natural == "Yes"
+                       where c.Urban == "Yes" && c.Rural == "Yes" && c._Man_made == "Yes" && c.Natural == "Yes" orderby c.ID
                        select c;
                     table1DataGridView.DataSource = contactDetails.AsDataView();
-
+                    table1BindingSource.DataSource = contactDetails.AsDataView();
                 }
                 catch (Exception ex)
                 {
@@ -60,9 +61,10 @@ namespace NewestTouristApp
                     // Query database  
                     var contactDetails =
                        from c in touristAttractionsDataSet.Table1
-                       where c.Rural == "Yes" && c._Man_made == "Yes" && c.Natural == "Yes" && c.Exercise == "Yes"
+                       where c.Rural == "Yes" && c._Man_made == "Yes" && c.Natural == "Yes" && c.Exercise == "Yes" orderby c.ID
                        select c;
                     table1DataGridView.DataSource = contactDetails.AsDataView();
+                    table1BindingSource.DataSource = contactDetails.AsDataView();
                 }
                 catch (Exception ex)
                 {
@@ -77,9 +79,10 @@ namespace NewestTouristApp
                     // Query database  
                     var contactDetails =
                        from c in touristAttractionsDataSet.Table1
-                       where c.Natural == "Yes" && c.Exercise == "Yes" && c.Amusement == "Yes" && c.Fast_food == "Yes"
+                       where c.Natural == "Yes" && c.Exercise == "Yes" && c.Amusement == "Yes" && c.Fast_food == "Yes" orderby c.ID
                        select c;
                     table1DataGridView.DataSource = contactDetails.AsDataView();
+                    table1BindingSource.DataSource = contactDetails.AsDataView();
                 }
                 catch (Exception ex)
                 {
@@ -94,9 +97,10 @@ namespace NewestTouristApp
                     // Query database  
                     var contactDetails =
                        from c in touristAttractionsDataSet.Table1
-                       where c.Exercise == "Yes" && c.Amusement == "Yes" && c.Fast_food == "Yes" && c.Sit_down == "Yes"
+                       where c.Exercise == "Yes" && c.Amusement == "Yes" && c.Fast_food == "Yes" && c.Sit_down == "Yes" orderby c.ID
                        select c;
                     table1DataGridView.DataSource = contactDetails.AsDataView();
+                    table1BindingSource.DataSource = contactDetails.AsDataView();
                 }
                 catch (Exception ex)
                 {
@@ -111,9 +115,10 @@ namespace NewestTouristApp
                     // Query database  
                     var contactDetails =
                        from c in touristAttractionsDataSet.Table1
-                       where c.Urban == "Yes" && c._Man_made == "Yes" && c.Exercise == "Yes" && c.Fast_food == "Yes"
+                       where c.Urban == "Yes" && c._Man_made == "Yes" && c.Exercise == "Yes" && c.Fast_food == "Yes" orderby c.ID
                        select c;
                     table1DataGridView.DataSource = contactDetails.AsDataView();
+                    table1BindingSource.DataSource = contactDetails.AsDataView();
                 }
                 catch (Exception ex)
                 {
@@ -128,9 +133,10 @@ namespace NewestTouristApp
                     // Query database  
                     var contactDetails =
                        from c in touristAttractionsDataSet.Table1
-                       where c.Rural == "Yes" && c.Natural == "Yes" && c.Amusement == "Yes" && c.Sit_down == "Yes"
+                       where c.Rural == "Yes" && c.Natural == "Yes" && c.Amusement == "Yes" && c.Sit_down == "Yes" orderby c.ID
                        select c;
                     table1DataGridView.DataSource = contactDetails.AsDataView();
+                    table1BindingSource.DataSource = contactDetails.AsDataView();
                 }
                 catch (Exception ex)
                 {
@@ -168,6 +174,18 @@ namespace NewestTouristApp
             this.Hide();
             interestsForm interests = new interestsForm();
             interests.Show();
+        }
+
+        private void imageTextBox_TextChanged(object sender, EventArgs e)
+        {
+            if (File.Exists(imageTextBox.Text))
+            {
+                attractionPictureBox.Load(imageTextBox.Text);
+            }
+            else
+            {
+                attractionPictureBox.Image = null;
+            }
         }
     }
 }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label location_NameLabel;
             System.Windows.Forms.Label locationLabel;
             System.Windows.Forms.Label availabilityLabel;
             System.Windows.Forms.Label descriptionLabel;
@@ -67,6 +66,8 @@
             this.previousButton = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.nextButton = new Guna.UI2.WinForms.Guna2GradientCircleButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.attractionPictureBox = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            this.imageTextBox = new System.Windows.Forms.TextBox();
             this.table1DataGridView = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -86,7 +87,7 @@
             this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            location_NameLabel = new System.Windows.Forms.Label();
+            this.dataGridViewTextBoxColumn19 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             locationLabel = new System.Windows.Forms.Label();
             availabilityLabel = new System.Windows.Forms.Label();
             descriptionLabel = new System.Windows.Forms.Label();
@@ -97,26 +98,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingNavigator)).BeginInit();
             this.table1BindingNavigator.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.attractionPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1DataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // location_NameLabel
-            // 
-            location_NameLabel.AutoSize = true;
-            location_NameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            location_NameLabel.ForeColor = System.Drawing.Color.White;
-            location_NameLabel.Location = new System.Drawing.Point(457, 71);
-            location_NameLabel.Name = "location_NameLabel";
-            location_NameLabel.Size = new System.Drawing.Size(82, 20);
-            location_NameLabel.TabIndex = 1;
-            location_NameLabel.Text = "Attraction:";
             // 
             // locationLabel
             // 
             locationLabel.AutoSize = true;
             locationLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             locationLabel.ForeColor = System.Drawing.Color.White;
-            locationLabel.Location = new System.Drawing.Point(457, 108);
+            locationLabel.Location = new System.Drawing.Point(457, 69);
             locationLabel.Name = "locationLabel";
             locationLabel.Size = new System.Drawing.Size(74, 20);
             locationLabel.TabIndex = 3;
@@ -127,7 +118,7 @@
             availabilityLabel.AutoSize = true;
             availabilityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             availabilityLabel.ForeColor = System.Drawing.Color.White;
-            availabilityLabel.Location = new System.Drawing.Point(457, 147);
+            availabilityLabel.Location = new System.Drawing.Point(457, 112);
             availabilityLabel.Name = "availabilityLabel";
             availabilityLabel.Size = new System.Drawing.Size(85, 20);
             availabilityLabel.TabIndex = 5;
@@ -149,7 +140,7 @@
             foodLabel.AutoSize = true;
             foodLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             foodLabel.ForeColor = System.Drawing.Color.White;
-            foodLabel.Location = new System.Drawing.Point(457, 190);
+            foodLabel.Location = new System.Drawing.Point(454, 161);
             foodLabel.Name = "foodLabel";
             foodLabel.Size = new System.Drawing.Size(117, 20);
             foodLabel.TabIndex = 9;
@@ -160,7 +151,7 @@
             hotelLabel.AutoSize = true;
             hotelLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             hotelLabel.ForeColor = System.Drawing.Color.White;
-            hotelLabel.Location = new System.Drawing.Point(457, 276);
+            hotelLabel.Location = new System.Drawing.Point(457, 249);
             hotelLabel.Name = "hotelLabel";
             hotelLabel.Size = new System.Drawing.Size(70, 20);
             hotelLabel.TabIndex = 11;
@@ -171,7 +162,7 @@
             entertainmentLabel.AutoSize = true;
             entertainmentLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             entertainmentLabel.ForeColor = System.Drawing.Color.White;
-            entertainmentLabel.Location = new System.Drawing.Point(457, 354);
+            entertainmentLabel.Location = new System.Drawing.Point(454, 344);
             entertainmentLabel.Name = "entertainmentLabel";
             entertainmentLabel.Size = new System.Drawing.Size(114, 20);
             entertainmentLabel.TabIndex = 13;
@@ -325,15 +316,18 @@
             // 
             // location_NameTextBox
             // 
-            this.location_NameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(28)))));
-            this.location_NameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.location_NameTextBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(46)))));
+            this.location_NameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.location_NameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table1BindingSource, "Location Name", true));
-            this.location_NameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.location_NameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.location_NameTextBox.ForeColor = System.Drawing.Color.White;
-            this.location_NameTextBox.Location = new System.Drawing.Point(597, 74);
+            this.location_NameTextBox.Location = new System.Drawing.Point(140, 68);
+            this.location_NameTextBox.Multiline = true;
             this.location_NameTextBox.Name = "location_NameTextBox";
-            this.location_NameTextBox.Size = new System.Drawing.Size(201, 22);
+            this.location_NameTextBox.ReadOnly = true;
+            this.location_NameTextBox.Size = new System.Drawing.Size(296, 36);
             this.location_NameTextBox.TabIndex = 2;
+            this.location_NameTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // locationTextBox
             // 
@@ -342,9 +336,10 @@
             this.locationTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table1BindingSource, "Location", true));
             this.locationTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.locationTextBox.ForeColor = System.Drawing.Color.White;
-            this.locationTextBox.Location = new System.Drawing.Point(597, 111);
+            this.locationTextBox.Location = new System.Drawing.Point(597, 69);
+            this.locationTextBox.Multiline = true;
             this.locationTextBox.Name = "locationTextBox";
-            this.locationTextBox.Size = new System.Drawing.Size(201, 22);
+            this.locationTextBox.Size = new System.Drawing.Size(253, 37);
             this.locationTextBox.TabIndex = 4;
             // 
             // availabilityTextBox
@@ -354,9 +349,10 @@
             this.availabilityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table1BindingSource, "Availability", true));
             this.availabilityTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.availabilityTextBox.ForeColor = System.Drawing.Color.White;
-            this.availabilityTextBox.Location = new System.Drawing.Point(597, 150);
+            this.availabilityTextBox.Location = new System.Drawing.Point(597, 112);
+            this.availabilityTextBox.Multiline = true;
             this.availabilityTextBox.Name = "availabilityTextBox";
-            this.availabilityTextBox.Size = new System.Drawing.Size(201, 22);
+            this.availabilityTextBox.Size = new System.Drawing.Size(253, 43);
             this.availabilityTextBox.TabIndex = 6;
             // 
             // descriptionTextBox
@@ -369,7 +365,7 @@
             this.descriptionTextBox.Location = new System.Drawing.Point(140, 406);
             this.descriptionTextBox.Multiline = true;
             this.descriptionTextBox.Name = "descriptionTextBox";
-            this.descriptionTextBox.Size = new System.Drawing.Size(521, 139);
+            this.descriptionTextBox.Size = new System.Drawing.Size(521, 131);
             this.descriptionTextBox.TabIndex = 8;
             // 
             // foodTextBox
@@ -379,10 +375,10 @@
             this.foodTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table1BindingSource, "Food", true));
             this.foodTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.foodTextBox.ForeColor = System.Drawing.Color.White;
-            this.foodTextBox.Location = new System.Drawing.Point(597, 193);
+            this.foodTextBox.Location = new System.Drawing.Point(597, 161);
             this.foodTextBox.Multiline = true;
             this.foodTextBox.Name = "foodTextBox";
-            this.foodTextBox.Size = new System.Drawing.Size(201, 65);
+            this.foodTextBox.Size = new System.Drawing.Size(253, 82);
             this.foodTextBox.TabIndex = 10;
             // 
             // hotelTextBox
@@ -392,10 +388,10 @@
             this.hotelTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table1BindingSource, "Hotel", true));
             this.hotelTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hotelTextBox.ForeColor = System.Drawing.Color.White;
-            this.hotelTextBox.Location = new System.Drawing.Point(597, 276);
+            this.hotelTextBox.Location = new System.Drawing.Point(597, 249);
             this.hotelTextBox.Multiline = true;
             this.hotelTextBox.Name = "hotelTextBox";
-            this.hotelTextBox.Size = new System.Drawing.Size(201, 63);
+            this.hotelTextBox.Size = new System.Drawing.Size(253, 89);
             this.hotelTextBox.TabIndex = 12;
             // 
             // entertainmentTextBox
@@ -405,9 +401,10 @@
             this.entertainmentTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table1BindingSource, "Entertainment", true));
             this.entertainmentTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.entertainmentTextBox.ForeColor = System.Drawing.Color.White;
-            this.entertainmentTextBox.Location = new System.Drawing.Point(597, 357);
+            this.entertainmentTextBox.Location = new System.Drawing.Point(597, 344);
+            this.entertainmentTextBox.Multiline = true;
             this.entertainmentTextBox.Name = "entertainmentTextBox";
-            this.entertainmentTextBox.Size = new System.Drawing.Size(201, 22);
+            this.entertainmentTextBox.Size = new System.Drawing.Size(253, 40);
             this.entertainmentTextBox.TabIndex = 14;
             // 
             // guna2BorderlessForm1
@@ -427,7 +424,7 @@
             this.exitButton.FillColor2 = System.Drawing.Color.Salmon;
             this.exitButton.Font = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitButton.ForeColor = System.Drawing.Color.White;
-            this.exitButton.Location = new System.Drawing.Point(840, 553);
+            this.exitButton.Location = new System.Drawing.Point(856, 538);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(100, 51);
             this.exitButton.TabIndex = 18;
@@ -446,7 +443,7 @@
             this.backPageButton.ForeColor = System.Drawing.Color.White;
             this.backPageButton.Image = global::NewestTouristApp.Properties.Resources.backpage;
             this.backPageButton.ImageSize = new System.Drawing.Size(50, 50);
-            this.backPageButton.Location = new System.Drawing.Point(772, 553);
+            this.backPageButton.Location = new System.Drawing.Point(788, 538);
             this.backPageButton.Name = "backPageButton";
             this.backPageButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.backPageButton.Size = new System.Drawing.Size(53, 51);
@@ -505,6 +502,26 @@
             this.label1.TabIndex = 20;
             this.label1.Text = "Navigation";
             // 
+            // attractionPictureBox
+            // 
+            this.attractionPictureBox.ImageRotate = 0F;
+            this.attractionPictureBox.Location = new System.Drawing.Point(140, 112);
+            this.attractionPictureBox.Name = "attractionPictureBox";
+            this.attractionPictureBox.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.attractionPictureBox.Size = new System.Drawing.Size(265, 256);
+            this.attractionPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.attractionPictureBox.TabIndex = 21;
+            this.attractionPictureBox.TabStop = false;
+            // 
+            // imageTextBox
+            // 
+            this.imageTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.table1BindingSource, "Image", true));
+            this.imageTextBox.Location = new System.Drawing.Point(856, 538);
+            this.imageTextBox.Name = "imageTextBox";
+            this.imageTextBox.Size = new System.Drawing.Size(10, 20);
+            this.imageTextBox.TabIndex = 23;
+            this.imageTextBox.TextChanged += new System.EventHandler(this.imageTextBox_TextChanged);
+            // 
             // table1DataGridView
             // 
             this.table1DataGridView.AutoGenerateColumns = false;
@@ -527,12 +544,14 @@
             this.dataGridViewTextBoxColumn15,
             this.dataGridViewTextBoxColumn16,
             this.dataGridViewTextBoxColumn17,
-            this.dataGridViewTextBoxColumn18});
+            this.dataGridViewTextBoxColumn18,
+            this.dataGridViewTextBoxColumn19});
             this.table1DataGridView.DataSource = this.table1BindingSource;
-            this.table1DataGridView.Location = new System.Drawing.Point(63, 59);
+            this.table1DataGridView.Location = new System.Drawing.Point(12, 477);
             this.table1DataGridView.Name = "table1DataGridView";
-            this.table1DataGridView.Size = new System.Drawing.Size(300, 220);
-            this.table1DataGridView.TabIndex = 20;
+            this.table1DataGridView.Size = new System.Drawing.Size(75, 112);
+            this.table1DataGridView.TabIndex = 23;
+            this.table1DataGridView.Visible = false;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -642,16 +661,24 @@
             this.dataGridViewTextBoxColumn18.HeaderText = "Highest Cost";
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             // 
+            // dataGridViewTextBoxColumn19
+            // 
+            this.dataGridViewTextBoxColumn19.DataPropertyName = "Image";
+            this.dataGridViewTextBoxColumn19.HeaderText = "Image";
+            this.dataGridViewTextBoxColumn19.Name = "dataGridViewTextBoxColumn19";
+            // 
             // mainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(32)))), ((int)(((byte)(46)))));
-            this.ClientSize = new System.Drawing.Size(960, 624);
+            this.ClientSize = new System.Drawing.Size(969, 601);
+            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.table1DataGridView);
+            this.Controls.Add(this.imageTextBox);
+            this.Controls.Add(this.attractionPictureBox);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.backPageButton);
-            this.Controls.Add(this.exitButton);
             this.Controls.Add(this.previousButton);
             this.Controls.Add(this.nextButton);
             this.Controls.Add(entertainmentLabel);
@@ -666,11 +693,11 @@
             this.Controls.Add(this.availabilityTextBox);
             this.Controls.Add(locationLabel);
             this.Controls.Add(this.locationTextBox);
-            this.Controls.Add(location_NameLabel);
             this.Controls.Add(this.location_NameTextBox);
             this.Controls.Add(this.table1BindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "mainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Tourist Attractions";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.touristAttractionsDataSet)).EndInit();
@@ -678,6 +705,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingNavigator)).EndInit();
             this.table1BindingNavigator.ResumeLayout(false);
             this.table1BindingNavigator.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.attractionPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1DataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -716,6 +744,8 @@
         private Guna.UI2.WinForms.Guna2CircleButton backPageButton;
         private Guna.UI2.WinForms.Guna2GradientButton exitButton;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox attractionPictureBox;
+        private System.Windows.Forms.TextBox imageTextBox;
         private System.Windows.Forms.DataGridView table1DataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
@@ -735,6 +765,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn19;
     }
 }
 
